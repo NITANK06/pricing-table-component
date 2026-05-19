@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#333;
+}
+
+
+.pricing-section{
+  padding:60px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:#666;
+  font-size:18px;
+}
+
+
+
+.pricing-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+
+
+.pricing-card{
+  background:white;
+  width:280px;
+  padding:40px 30px;
+  border-radius:15px;
+  text-align:center;
+  position:relative;
+  transition:0.3s ease;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.pricing-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+
+
+.recommended{
+  border:3px solid #2563eb;
+  transform:scale(1.05);
+}
+
+.recommended:hover{
+  transform:scale(1.08);
+}
+
+.badge{
+  position:absolute;
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#2563eb;
+  color:white;
+  padding:8px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+
+.price{
+  font-size:48px;
+  margin:25px 0;
+  font-weight:bold;
+}
+
+.price span{
+  font-size:18px;
+  color:#666;
+}
+
+
+
+.features{
+  list-style:none;
+  margin-bottom:30px;
+}
+
+.features li{
+  margin:15px 0;
+  color:#444;
+}
+
+
+
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  background:#111827;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  transition:0.3s ease;
+}
+
+.btn:hover{
+  background:#2563eb;
+}
+
+.active-btn{
+  background:#2563eb;
+}
+
+.active-btn:hover{
+  background:#1e40af;
+}
+
+
+
+@media (max-width: 992px){
+
+  .pricing-container{
+    gap:20px;
+  }
+
+  .pricing-card{
+    width:45%;
+  }
+
+}
+
+
+
+@media (max-width: 600px){
+
+  .section-title h1{
+    font-size:32px;
+  }
+
+  .pricing-container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .pricing-card{
+    width:100%;
+    max-width:350px;
+  }
+
+  .recommended{
+    transform:scale(1);
+  }
+
+  .recommended:hover{
+    transform:translateY(-10px);
+  }
+
+}
